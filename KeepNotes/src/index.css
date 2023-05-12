@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Josefin+Sans:wght@100&family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400&display=swap'); */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: sticky;
+}
+.header{
+  margin-left: -5px;
+  width: 100%;
+  line-height: 100%;
+  background-color: #f5ba13;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 4px;
+  color: white;
+  box-shadow: 5px 3px 15px -5px rgba(0,0,0,0.1);
+}
+.main-note{
+  width: 460px;
+  padding: 15px 10px 5px 10px;
+  margin: 10px auto;
+
+  
+}
+.my-notes h1{
+  color: #34495e;
+}
+.my-notes p{
+  color: grey;
+}
+form{
+  min-height: 50px;
+  color: #ecf0f1;
+  padding: 15px 10px 5px 10px;
+  box-shadow: 3px 5px 15px -5px rgba(0,0,0,0.9);
+  border-radius: 10px;
+  
+  
+}
+input{
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+textarea{
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.muibutton-root{
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  bottom: -28px;
+  left: 400px;
+  cursor: pointer;
+  background-color: #fff !important;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+  border-radius: 50% !important;
+}
+.muibutton-root .plus-sign{
+  font-size: 45px !important;
+  font-weight: 900;
+  color: #f4b400;
+  cursor: pointer;
+  z-index: 222;
+  background: transparent;
+}
+.muibutton-root:hover{
+  background: #f4b400 !important;
+}
+.muibutton-root:hover .plus-sign{
+  color: #fff;
+  background: transparent;
+}
+.note{
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin-bottom: 50px;
+  float: left;
+  margin-left: 40px;
+}
+.note h1{
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p{
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.note .btn{
+  position: relative;
+  float: right;
+  margin-right: 0px;
+  margin-top: 25px;
+  color: #f4b400;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 3px 3px 15px -10px rgba(0,0,0,0.1);
+  border-radius: 50%;
+}
+.deleteicon{
+  width: 0.7em;
+  height: 0.7em;
+}
+.note .btn:hover{
+  background-color: #f5ba13;
+}
+.note .btn:hover .deleteicon{
+  color: #fff;
+}
+
+/* footer{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  
+  } */
+  footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    background-color: #f5ba13;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    padding: 10px;
+
+   
+   
+  }
+  footer p{
+    margin-top: 4px;
+  }
+   
+
+@media (max-width:500px){
+  .note{
+    
+   margin-left: 100px;
+    
+  }
+}
